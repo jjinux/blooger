@@ -1,4 +1,4 @@
-<div>
+<div id="top-right-links">
   <% if current_user %>
     Welcome, <%= current_user.username %><br/>
     <%= link_to "Account", current_user %> |
@@ -8,3 +8,9 @@
     <%= link_to "Log In", new_user_session_path %>
   <% end %>
 </div>
+
+<% if flash[:notice] %>
+  <div id="flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
