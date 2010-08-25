@@ -6,3 +6,4 @@
 
 # Created by Rails.
 /log/*.log
+/db/schema.rb
