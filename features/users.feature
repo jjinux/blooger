@@ -23,7 +23,7 @@ Feature: Users
     And I fill in "Password" with "crazysecret"
     And I fill in "Password confirmation" with "crazysecret"
     And I press "Register"
-    Then I should see "Account registered!"
+    Then I should see "Welcome, bob"
     And I should see "Logout"
 
     When I follow "Account"
@@ -39,10 +39,10 @@ Feature: Users
     And I follow "Cancel"
     And I follow "Edit"
 
-    When I fill in "Username" with ""
+    When I fill in "Blog title" with ""
     And I press "Update"
     Then I should not see "Account updated!"
-    And I should see "Username can't be blank"
+    And I should see "Blog title can't be blank"
 
     When I fill in "Blog title" with "New Blog"
     And I press "Update"
