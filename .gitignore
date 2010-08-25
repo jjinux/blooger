@@ -1,2 +1,8 @@
-/log/*.log
+# Created by NetBeans.
+/nbproject
+
+# Created by Vim.
 .*.swp
+
+# Created by Rails.
+/log/*.log
