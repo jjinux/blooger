@@ -1,0 +1,10 @@
+<h2>Edit Account for <%= @user.username %></h2>
+
+<% form_for @user do |f| %>
+  <%= render :partial => "form", :object => f %>
+
+  <p>
+    <%= f.submit "Update" %>
+    <%= link_to "Cancel", current_user %>
+  </p>
+<% end %>

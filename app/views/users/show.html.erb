@@ -1,0 +1,13 @@
+<h2>Account for <%= @user.username %></h2>
+
+<p>
+  <label>Username:</label>
+  <%= @user.username %>
+</p>
+
+<p>
+  <label>Blog title:</label>
+  <%= @user.blog_title %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %>
