@@ -23,7 +23,7 @@ def login_on_the_current_page(options = {})
   end
   click_button "Login"
   unless options[:blank_password]
-    response.should contain("Login successful!")
+    response.should contain("Welcome, #{@user.username}")
     response.should contain("Logout")
   end
 end
