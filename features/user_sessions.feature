@@ -10,14 +10,21 @@ Feature: User Sessions
     When I follow "Log In"
     And I try to login with a blank password on the current page
     Then I should see "Password cannot be blank"
-    And I should not see "Login successful!"
+    And I should not see "Welcome, joe"
 
     When I login on the current page
-    Then I should see "Login successful!"
+    Then I should see "Welcome, joe"
     And I should see "Logout"
 
   Scenario: log out
     Given I am logged in
+    Then I should not see "Log In"
+    And I should not see "Register"
+    And I should see "Account"
+    And I should see "Logout"
+
     When I follow "Logout"
-    Then I should see "You are now logged out."
-    And I should see "Username"
+    Then I should see "Log In"
+    And I should see "Register"
+    And I should not see "Account"
+    And I should not see "Logout"
