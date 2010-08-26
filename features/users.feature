@@ -25,9 +25,8 @@ Feature: Users
     And I press "Register"
     Then I should see "Welcome, bob"
     And I should see "Logout"
-
-    When I follow "Account"
-    Then I should see the page header "Account"
+    And I should not see "You must be logged out"
+    And I should see the page header "Account"
     And I should see "bob"
     And I should see "My Cool Blog"
 
