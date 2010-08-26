@@ -42,3 +42,15 @@ Feature: Posts
     When I follow "Destroy"
     Then I should see "Post destroyed."
     But I should not see "Show"
+
+  Scenario: use Markdown to format the body
+    Given I am logged in
+
+    When I follow "New post"
+    And I fill in "Title" with "Title"
+    And I fill in "Body" with "We are using __Markdown__ now!"
+    And I press "Create"
+    Then I should see Markdown in strong tags
+
+    When I follow "View Bloog"
+    Then I should see Markdown in strong tags
