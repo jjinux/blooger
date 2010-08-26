@@ -24,3 +24,7 @@ h1.title a {
   padding-top: 1em;
   text-align: center;
 }
+
+#picking-nose {
+  float: right;
+}
