@@ -4,8 +4,12 @@
   <p>There are no bloog posts yet.</p>
 <% else %>
   <% @bloog.posts.each do |post| %>
-    <h3><%= post.title %></h3>
+    <div class="bloog-post">
+      <h3><%= post.title %></h3>
 
-    <%= post.body %>
+      <div class="created-at">Created: <%= post.created_at.strftime("%c") %></div>
+
+      <%= post.body %>
+    </div>
   <% end %>
 <% end %>
