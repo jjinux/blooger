@@ -6,6 +6,9 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Blooger</title>
   <%= stylesheet_link_tag 'application', :cache => true %>
+  <% if @bloog %>
+    <link rel="alternate" type="application/atom+xml" title="<%= @bloog.bloog_title %>" href="<%= atom_bloog_url(@bloog) %>" />
+  <% end %>
 </head>
 <body>
   <%= render(:partial => "shared/header") %>
