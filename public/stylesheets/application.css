@@ -1,8 +1,11 @@
 #top-right-links {
   float: right;
+  text-align: right;
 }
 
 h1.title {
+  margin-top: 0;
+  padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
