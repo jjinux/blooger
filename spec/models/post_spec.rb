@@ -8,5 +8,6 @@ describe Post do
     post = user.posts.first
     post.title.should == "Title"
     post.body.should == "Body"
+    Post.find_by_title!("Title").first.user.should == user
   end
 end
