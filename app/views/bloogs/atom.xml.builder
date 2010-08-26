@@ -22,7 +22,7 @@ xml.feed({"xmlns" => "http://www.w3.org/2005/Atom"}) do
       xml.published(post.created_at.xmlschema)
       xml.updated(post.updated_at.xmlschema)
       xml.title(post.title, :type => 'text')
-      xml.content(post.body, :type => "html")
+      xml.content(format_body(post.body), :type => "html")
       xml.author do
         xml.name(@bloog.username)
       end
