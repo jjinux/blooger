@@ -7,5 +7,5 @@ Feature: Bloogs
     Given I am on the home page
     Then I should see "There are no bloogs yet."
 
-    When I press "Blooger"
+    When I follow "Blooger"
     Then I should see "There are no bloogs yet."
