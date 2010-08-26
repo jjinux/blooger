@@ -1,1 +1,4 @@
-Rails 2.3.8
+rails -v 2.3.8
+authlogic
+matthuhiggins-foreigner
+BlueCloth
