@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_filter :require_user
-  before_filter :find_post, :only => [:show, :edit, :update]
+  before_filter :find_post, :only => [:show, :edit, :update, :destroy]
 
   def admin
     @posts = current_user.posts
@@ -35,6 +35,12 @@ class PostsController < ApplicationController
     else
       render :action => "edit"
     end
+  end
+
+  def destroy
+    @post.destroy
+    flash[:notice] = 'Post destroyed.'
+    redirect_to admin_user_posts_url
   end
 
   private

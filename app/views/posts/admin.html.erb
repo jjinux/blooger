@@ -7,7 +7,7 @@
     <thead>
       <tr>
         <th>Title</th>
-        <th width="40%">Actions</th>
+        <th width="40%" colspan="2">Actions</th>
       </tr>
     </thead>
 
@@ -15,6 +15,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= link_to "Show", user_post_path(:user_id => current_user, :id => post) %></td>
+        <td><%= link_to 'Destroy', user_post_path(:user_id => current_user, :id => post), :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
   </table>

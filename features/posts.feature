@@ -32,3 +32,13 @@ Feature: Posts
   Scenario: there are no posts yet
     Given I am logged in
     Then I should see "There are no posts yet."
+
+  Scenario: delete a post
+    Given I am logged in
+    And there is only one post
+    When I follow "Edit Posts"
+    Then I should see "Show"
+
+    When I follow "Destroy"
+    Then I should see "Post destroyed."
+    But I should not see "Show"
