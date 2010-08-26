@@ -10,3 +10,7 @@ h1.title {
 .byline {
   font-style: italic;
 }
+
+#flash {
+  font-weight: bold;
+}
