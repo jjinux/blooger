@@ -48,7 +48,7 @@ end
 #     | Note           | Nice guy   |
 #     | Wants Email?   |            |
 #
-# TODO: Add support for checkbox, select og option
+# I need to add support for checkbox, select og option
 # based on naming conventions.
 #
 When /^(?:|I )fill in the following:$/ do |fields|
