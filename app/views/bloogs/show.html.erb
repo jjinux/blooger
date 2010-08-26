@@ -1,1 +1,11 @@
 <h2><%= @bloog.bloog_title %></h2>
+
+<% if @bloog.posts.blank? %>
+  <p>There are no bloog posts yet.</p>
+<% else %>
+  <% @bloog.posts.each do |post| %>
+    <h3><%= post.title %></h3>
+
+    <%= post.body %>
+  <% end %>
+<% end %>
