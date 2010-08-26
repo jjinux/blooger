@@ -1,29 +1,21 @@
 <%= form.error_messages %>
 
-<fieldset>
-  <legend>Account</legend>
+<p>
+  <%= form.label :username %>
+  <%= form.text_field :username %>
+</p>
 
-  <p>
-    <%= form.label :username %>
-    <%= form.text_field :username %>
-  </p>
+<p>
+  <%= form.label :password, form.object.new_record? ? nil : "Change password" %>
+  <%= form.password_field :password %>
+</p>
 
-  <p>
-    <%= form.label :blog_title %>
-    <%= form.text_field :blog_title %>
-  </p>
-</fieldset>
+<p>
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation %>
+</p>
 
-<fieldset>
-  <legend>Password</legend>
-
-  <p>
-    <%= form.label :password, form.object.new_record? ? nil : "Change password" %>
-    <%= form.password_field :password %>
-  </p>
-
-  <p>
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
-  </p>
-</fieldset>
+<p>
+  <%= form.label :blog_title %>
+  <%= form.text_field :blog_title %>
+</p>
