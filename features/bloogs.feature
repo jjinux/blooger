@@ -35,3 +35,6 @@ Feature: Bloogs
     When I reload the page
     Then I should see "One Post Title"
     And I should see "One post body."
+
+    When I follow the link for the Atom feed
+    Then I should get a well-formed Atom feed
