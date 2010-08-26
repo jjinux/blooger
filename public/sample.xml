@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+    <id>tag:blogger.com,1999:blog-11788780</id>
+    <updated>2010-08-25T10:34:22.083-07:00</updated>
+    <title type='text'>JJinuxLand</title>
+    <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://jjinux.blogspot.com/feeds/posts/default'/>
+    <link rel='alternate' type='text/html' href='http://jjinux.blogspot.com/'/>
+    <author>
+        <name>Shannon -jj Behrens</name>
+    </author>
+    <generator version='7.00' uri='http://www.blogger.com'>Blogger</generator>
+    <entry>
+        <id>tag:blogger.com,1999:blog-11788780.post-6926750476873194595</id>
+        <published>2010-08-21T14:48:00.001-07:00</published>
+        <updated>2010-08-21T15:33:31.594-07:00</updated>
+        <title type='text'>Books: Programming Scala</title>
+        <content type='html'>I just finished reading &lt;a href="http://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/0596155956/ref=sr_1_2?s=books&amp;ie=UTF8&amp;qid=1282427345&amp;sr=1-2"&gt;Programming Scala&lt;/a&gt;.  In short, I really liked it.&lt;br /&gt;&lt;br /&gt;The first few chapters are breathtakingly fast.  Some of the middle chapters are kind of slow, but are still worthwhile.  Scala is a fairly large language (unlike, say, Scheme or C), and the book is a fairly dense 400 pages.  I found it helpful to read slowly and take notes.&lt;br /&gt;&lt;br /&gt;As for Scala itself, I really like it!  Scala is a nice mix of Java, C#, Erlang, Haskell, Ruby, and Smalltalk.  You can treat it as a "better Java", or you can treat it as a more enterprise-friendly Haskell.  Either way, it's exactly what I was looking for:  a language with reasonable syntax, an ML type system, and a decent set of real world libraries.  I know that the Haskell community is working hard in this direction as well.  I think Scala stands a very good chance at being a work-friendly, programmer-friendly language.&lt;br /&gt;&lt;br /&gt;I'm a little afraid that its type system may be too large and too complex for a lot of programmers.  To be fair, I think that C++ is too large and complex for most programmers too.  I'm also afraid of subsetting--i.e. the situation where every team picks a different subset of the language to use.  This is very common in multiparadigmatic languages like C++.  On the other hand, some multiparadigmatic languages like Python seem to avoid this problem.&lt;br /&gt;&lt;br /&gt;There's a lot to learn in Scala--covariance, contravariance, parameterized types, abstract types, self-type declarations, lazy values, by-name parameters, DSL-friendly abbreviations, path dependent types, oh my!  And there's more!  I ended up with 50 pages worth of notes.&lt;br /&gt;&lt;br /&gt;I'm pretty sold on Scala.  Now, all I need is a startup to hire me to write it ;)&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/11788780-6926750476873194595?l=jjinux.blogspot.com' alt='' /&gt;&lt;/div&gt;</content>
+        <author>
+            <name>Shannon -jj Behrens</name>
+        </author>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-11788780.post-9183642651275636203</id>
+        <published>2010-08-14T20:42:00.000-07:00</published>
+        <updated>2010-08-18T14:31:30.182-07:00</updated>
+        <title type='text'>Personal: Looking for Work</title>
+        <content type='html'>I'm looking for a new job.  As much as I've enjoyed my time at my current company, I'd like to move on to something new.&lt;ul&gt;&lt;li&gt;I'd like to give Scala a shot, if possible.  For the last year, I've been doing Ruby on Rails, and before that I was doing Python.  I've been learning Scala in preparation of making the transition.&lt;/li&gt;&lt;li&gt;I'm only looking at companies in San Francisco or the East Bay.&lt;/li&gt;&lt;li&gt;I prefer behavior driven development and really clean code.  I'm really bad at working on sloppy code bases with no tests and no documentation.&lt;/li&gt;&lt;li&gt;I prefer Linux.&lt;/li&gt;&lt;li&gt;I have a predilection toward startups.&lt;/li&gt;&lt;/ul&gt;Here's my &lt;a href="http://jjinux.github.com/resume/"&gt;resume&lt;/a&gt;.  Thanks!&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/11788780-9183642651275636203?l=jjinux.blogspot.com' alt='' /&gt;&lt;/div&gt;</content>
+        <author>
+            <name>Shannon -jj Behrens</name>
+        </author>
+    </entry>
+</feed>
