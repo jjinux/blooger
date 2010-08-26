@@ -12,3 +12,8 @@ Feature: Bloogs
 
     When I follow "create your own bloog"
     Then I should see the page header "Register"
+
+    Given I am logged in
+    When I follow "Blooger"
+    And I follow "bloog about it"
+    Then I should see the page header "New Post"
