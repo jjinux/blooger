@@ -9,7 +9,7 @@
 
       <div class="created-at">Created: <%= post.created_at.strftime("%c") %></div>
 
-      <%= post.body %>
+      <%= format_body(post.body) %>
     </div>
   <% end %>
 <% end %>
