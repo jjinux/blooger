@@ -1,0 +1,16 @@
+<h2>Post</h2>
+
+<p>
+  <label>Title:</label>
+  <%= @post.title %>
+</p>
+
+<p>
+  <label>Body:</label>
+  <%= @post.body %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_user_post_path(:user_id => current_user, :id => @post) %> |
+  <%= link_to 'Back', user_posts_path(:user_id => current_user) %>
+</p>
