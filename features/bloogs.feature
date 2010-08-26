@@ -3,9 +3,12 @@ Feature: Bloogs
   As a user
   I want to see the list of bloogs, pick one, and read it
 
-  Scenario: the homepage has a list of bloogs
+  Scenario: look at the list of bloogs or create your own
     Given I am on the home page
     Then I should see "There are no bloogs yet."
 
     When I follow "Blooger"
     Then I should see "There are no bloogs yet."
+
+    When I follow "create your own bloog"
+    Then I should see the page header "Register"
