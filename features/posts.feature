@@ -28,3 +28,7 @@ Feature: Posts
     And I press "Update"
     Then I should see "Post was successfully updated."
     And I should see "New Title"
+
+  Scenario: there are no posts yet
+    Given I am logged in
+    Then I should see "There are no posts yet."
