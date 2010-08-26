@@ -15,6 +15,7 @@ Feature: User Sessions
     When I login on the current page
     Then I should see "Welcome, joe"
     And I should see "Logout"
+    And I should see the page header "Posts"
 
   Scenario: log out
     Given I am logged in
