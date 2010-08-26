@@ -1,5 +1,6 @@
 # See public/sample.xml for a sample feed that I got from Blogger.  I stripped
-# out a bunch of stuff that we don't need.
+# out a bunch of stuff from it that we don't need and then translated it into
+# the below.
 
 xml.instruct!
 xml.instruct!("xml-stylesheet", {:href => "http://www.blogger.com/styles/atom.css", :type => "text/css"})
