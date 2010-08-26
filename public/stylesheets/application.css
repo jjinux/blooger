@@ -28,3 +28,13 @@ h1.title a {
 #picking-nose {
   float: right;
 }
+
+.bloog-post h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.bloog-post .created-at {
+  font-style: italic;
+  padding-bottom: 1em;
+}
