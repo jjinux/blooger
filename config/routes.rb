@@ -4,7 +4,9 @@ ActionController::Routing::Routes.draw do |map|
       :collection => {:admin => :get}
   end
 
-  map.resources :bloogs
+  map.resources :bloogs,
+    :member => {:atom => :get}
+
   map.resource :account, :controller => "users"
   map.resource :user_session
 
