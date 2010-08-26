@@ -5,3 +5,7 @@ end
 Then /^I should see Markdown in strong tags$/ do
   response.should have_selector("strong", :content => "Markdown")
 end
+
+Then /^I should not see any script tags$/ do
+  response.should_not have_selector("script")
+end
