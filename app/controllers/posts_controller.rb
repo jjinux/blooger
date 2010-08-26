@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_filter :require_user
   before_filter :find_post, :only => [:show, :edit, :update]
 
-  def index
+  def admin
     @posts = current_user.posts
   end
 

@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "Login successful!"
-      redirect_to user_posts_url(:user_id => @user_session.user)
+      redirect_to admin_user_posts_url(:user_id => @user_session.user)
     else
       render :action => :new
     end

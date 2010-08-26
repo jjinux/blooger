@@ -1,10 +1,10 @@
 <h2>New Post</h2>
 
-<% form_for(@post, :url => user_posts_path(:user_id => current_user)) do |f| %>
+<% form_for(@post, :url => {:action => :create, :user_id => current_user}) do |f| %>
   <%= render :partial => "form", :object => f %>
 
   <p>
     <%= f.submit 'Create' %>
-    <%= link_to 'Cancel', user_posts_path(:user_id => current_user) %>
+    <%= link_to 'Cancel', admin_user_posts_path(:user_id => current_user) %>
   </p>
 <% end %>

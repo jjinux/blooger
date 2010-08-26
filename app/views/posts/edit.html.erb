@@ -7,6 +7,6 @@
   <p>
     <%= f.submit 'Update' %>
     <%= link_to 'Show', user_post_path(:user_id => current_user, :id => @post) %> |
-    <%= link_to 'Back', user_posts_path(:user_id => current_user) %>
+    <%= link_to 'Back', admin_user_posts_path(:user_id => current_user) %>
   </p>
 <% end %>
