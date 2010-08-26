@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resource :account, :controller => "users"
-  map.resources :users
+  map.resources :users, :has_many => :posts
   map.resource :user_session
 
   # The priority is based upon order of creation: first created -> highest priority.
