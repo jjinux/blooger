@@ -1,13 +1,13 @@
 <h2>Post</h2>
 
 <p>
-  <label>Title:</label>
+  <b>Title:</b>
   <%= @post.title %>
 </p>
 
 <p>
-  <label>Body:</label>
-  <%= format_body(@post.body) %>
+  <b>Body:</b>
+  <blockquote><%= format_body(@post.body) %></blockquote>
 </p>
 
 <p>
