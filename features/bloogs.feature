@@ -38,3 +38,8 @@ Feature: Bloogs
 
     When I follow the link for the Atom feed
     Then I should get a well-formed Atom feed
+
+    When I am on the homepage
+    And I follow "View Bloog"
+    And I follow "Atom Feed"
+    Then I should get a well-formed Atom feed
