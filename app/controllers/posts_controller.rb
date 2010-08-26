@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     end
     if @post.save
       flash[:notice] = 'Post was successfully created.'
-      redirect_to user_post_url(:user_id => current_user, :post_id => @post)
+      redirect_to user_post_url(:user_id => current_user, :id => @post)
     else
       render :action => "new"
     end
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   def update
     if @post.update_attributes(params[:post])
       flash[:notice] = 'Post was successfully updated.'
-      redirect_to user_post_url(:user_id => current_user, :post_id => @post)
+      redirect_to user_post_url(:user_id => current_user, :id => @post)
     else
       render :action => "edit"
     end
