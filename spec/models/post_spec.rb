@@ -9,4 +9,12 @@ describe Post do
     post.body.should == "Body"
     post.user.should == user
   end
+
+  it "enforces referential integrity" do
+    lambda do
+      Post.create!(:title => "Title", :body => "Body") do |p|
+        p.user_id = 99
+      end
+    end.should raise_error(ActiveRecord::StatementInvalid)
+  end
 end
