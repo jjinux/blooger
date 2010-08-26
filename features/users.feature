@@ -27,7 +27,9 @@ Feature: Users
     Then I should see "Welcome, bob"
     And I should see "Logout"
     And I should not see "You must be logged out"
-    And I should see the page header "Account"
+    And I should see the page header "Posts"
+
+    When I follow "Account"
     And I should see "bob"
     And I should see "My Cool Blog"
 
