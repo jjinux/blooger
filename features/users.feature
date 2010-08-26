@@ -14,13 +14,13 @@ Feature: Users
     And I should see "Username should use only letters, numbers, spaces, and .-_@ please."
     And I should see "Password is too short (minimum is 4 characters)"
     And I should see "Password doesn't match confirmation"
-    And I should see "Blog title can't be blank"
+    And I should see "Bloog title can't be blank"
 
   Scenario: register successfully
     Given I am on the homepage
     When I follow "Register"
     And I fill in "Username" with "bob"
-    And I fill in "Blog title" with "My Cool Blog"
+    And I fill in "Bloog title" with "My Cool Blog"
     And I fill in "Password" with "crazysecret"
     And I fill in "Password confirmation" with "crazysecret"
     And I press "Register"
@@ -41,12 +41,12 @@ Feature: Users
     And I follow "Cancel"
     And I follow "Edit"
 
-    When I fill in "Blog title" with ""
+    When I fill in "Bloog title" with ""
     And I press "Update"
     Then I should not see "Account updated!"
-    And I should see "Blog title can't be blank"
+    And I should see "Bloog title can't be blank"
 
-    When I fill in "Blog title" with "New Blog"
+    When I fill in "Bloog title" with "New Blog"
     And I press "Update"
     Then I should see "Account updated!"
     And I should see "New Blog"

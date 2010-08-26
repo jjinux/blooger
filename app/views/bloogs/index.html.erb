@@ -15,7 +15,7 @@
 <% else %>
   <ul>
     <% @bloogs.each do |bloog| %>
-      <li><%= link_to bloog.blog_title, bloog_path(bloog) %></li>
+      <li><%= link_to bloog.bloog_title, bloog_path(bloog) %></li>
     <% end %>
   </ul>
 <% end %>
