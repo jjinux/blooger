@@ -26,5 +26,6 @@ Feature: User Sessions
     When I follow "Logout"
     Then I should see "Log In"
     And I should see "Register"
+    And I should see "You are now logged out."
     And I should not see "Account"
     And I should not see "Logout"
