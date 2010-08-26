@@ -40,6 +40,6 @@ class PostsController < ApplicationController
   private
 
   def find_post
-    current_user.posts.find(params[:id])
+    @post = current_user.posts.find(params[:id])
   end
 end
