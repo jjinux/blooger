@@ -28,6 +28,9 @@ Feature: Bloogs
     And I follow "Joe's Blog"
     Then I should see "There are no bloog posts yet."
 
+    When I follow "View Bloog"
+    Then I should see "There are no bloog posts yet."
+
     Given there is only one post
     When I reload the page
     Then I should see "One Post Title"
