@@ -6,6 +6,7 @@ Feature: Users
   Scenario: register unsuccessfully
     Given I am on the homepage
     When I follow "Register"
+    And I fill in "Username" with "              "
     And I press "Register"
     Then I should see "There were problems with the following fields:"
     And I should see "Password confirmation is too short (minimum is 4 characters)"
