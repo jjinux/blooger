@@ -1,0 +1,12 @@
+#top-right-links {
+  float: right;
+}
+
+h1.title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.byline {
+  font-style: italic;
+}
