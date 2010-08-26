@@ -1,3 +1,29 @@
+== Project-specific Documentation
+
+This is a simple blogger-like site that I'm building for an interview.
+
+Here are the basic features of the site:
+
+* You can create an account (aka a "bloog").
+* You can post to your bloog.
+* You can use Markdown when writing your post.
+* You can see all the bloogs that different people have created on the homepage.
+* You can see all the posts for a particular bloog.
+* There is an Atom feed for the bloog.
+* You can edit your account settings.
+* There are some fun surprises in the user interface.
+
+I make use of the following "high-level" gems, plugins, etc.:
+
+* Cucumber, Webrat, RSpec, and factory_girl for behavior driven development
+* Authlogic for access control
+* rails_xss for preventing cross-site scripting vulnerabilities
+* strip_attributes for preventing useless whitespace in the data
+* matthuhiggins-foreigner for foreign key constraints
+* BlueCloth for Markdown support
+* Nokogiri for parsing XML
+* Nested resources were used for nesting posts under users
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
