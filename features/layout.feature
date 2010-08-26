@@ -7,3 +7,4 @@ Feature: Layout
     Given I am on the homepage
     Then I should see "Terms of Use"
     And I should see "Copyright 2010 Booger Lovers, Inc."
+    And I should see "Source Code"
