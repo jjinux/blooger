@@ -1,7 +1,7 @@
 Feature: Posts
-  So that I can blog about cool things
+  So that I can bloog about cool things
   As a user
-  I want to write blog posts
+  I want to write bloog posts
 
   Scenario: create a new post
     Given I am logged in

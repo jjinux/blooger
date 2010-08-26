@@ -19,13 +19,13 @@ Feature: Bloogs
     Then I should see the page header "New Post"
 
     When I follow "Blooger"
-    And I follow "Joe's Blog"
-    Then I should see the page header "Joe's Blog"
+    And I follow "Joe's Bloog"
+    Then I should see the page header "Joe's Bloog"
 
   Scenario: view the list of bloog posts
     Given I am logged in
     When I follow "Blooger"
-    And I follow "Joe's Blog"
+    And I follow "Joe's Bloog"
     Then I should see "There are no bloog posts yet."
 
     When I follow "View Bloog"

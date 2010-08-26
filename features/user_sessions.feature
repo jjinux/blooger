@@ -1,7 +1,7 @@
 Feature: User Sessions
-  So that I can have my own blog
+  So that I can have my own bloog
   As a non-user
-  I want to sign up and create a blog
+  I want to sign up and create a bloog
 
   Scenario: log in
     Given I am a registered user

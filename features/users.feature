@@ -1,5 +1,5 @@
 Feature: Users
-  So that I can write my own blog
+  So that I can write my own bloog
   As an unregistered user
   I want to register as a user
 
@@ -20,7 +20,7 @@ Feature: Users
     Given I am on the homepage
     When I follow "Register"
     And I fill in "Username" with "bob"
-    And I fill in "Bloog title" with "My Cool Blog"
+    And I fill in "Bloog title" with "My Cool Bloog"
     And I fill in "Password" with "crazysecret"
     And I fill in "Password confirmation" with "crazysecret"
     And I press "Register"
@@ -31,7 +31,7 @@ Feature: Users
 
     When I follow "Account"
     And I should see "bob"
-    And I should see "My Cool Blog"
+    And I should see "My Cool Bloog"
 
   Scenario: edit my account
     Given I am logged in
@@ -46,7 +46,7 @@ Feature: Users
     Then I should not see "Account updated!"
     And I should see "Bloog title can't be blank"
 
-    When I fill in "Bloog title" with "New Blog"
+    When I fill in "Bloog title" with "New Bloog"
     And I press "Update"
     Then I should see "Account updated!"
-    And I should see "New Blog"
+    And I should see "New Bloog"
