@@ -14,3 +14,8 @@ h1.title {
 #flash {
   font-weight: bold;
 }
+
+#footer {
+  padding-top: 1em;
+  text-align: center;
+}
