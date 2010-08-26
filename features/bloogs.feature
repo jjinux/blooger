@@ -21,3 +21,14 @@ Feature: Bloogs
     When I follow "Blooger"
     And I follow "Joe's Blog"
     Then I should see the page header "Joe's Blog"
+
+  Scenario: view the list of bloog posts
+    Given I am logged in
+    When I follow "Blooger"
+    And I follow "Joe's Blog"
+    Then I should see "There are no bloog posts yet."
+
+    Given there is only one post
+    When I reload the page
+    Then I should see "One Post Title"
+    And I should see "One post body."
