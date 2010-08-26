@@ -1,6 +1,13 @@
 <p>
-  A <b>bloog</b> is a blog about boogers.  If you love to talk about boogers as
-  much as we do, <%= link_to "create your own bloog", new_user_path %>!
+  A <b>bloog</b> is a blog about boogers.
+
+  <% if current_user %>
+    If you have a good booger story,
+    <%= link_to "bloog about it", new_user_post_path(:user_id => current_user) %>!
+  <% else %>
+    If you love to talk about boogers as much as we do,
+    <%= link_to "create your own bloog", new_user_path %>!
+  <% end %>
 </p>
 
 <p>There are no bloogs yet.</p>
