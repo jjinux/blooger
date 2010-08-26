@@ -21,9 +21,10 @@ Feature: Posts
   Scenario: edit a post
     Given I am logged in
     And there is only one post
-    When I follow "Show"
+    When I follow "Edit Posts"
+    And I follow "Show"
     And I follow "Edit"
     And I fill in "Title" with "New Title"
     And I press "Update"
-    Then I should see "Film was successfully updated."
+    Then I should see "Post was successfully updated."
     And I should see "New Title"
