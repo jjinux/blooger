@@ -17,3 +17,7 @@ Feature: Bloogs
     When I follow "Blooger"
     And I follow "bloog about it"
     Then I should see the page header "New Post"
+
+    When I follow "Blooger"
+    And I follow "Joe's Blog"
+    Then I should see the page header "Joe's Blog"
