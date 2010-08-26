@@ -24,6 +24,25 @@ I make use of the following "high-level" gems, plugins, etc.:
 * Nokogiri for parsing XML
 * Nested resources were used for nesting posts under users
 
+== Project-specific Installation Instructions
+
+Assuming you already have Ruby, Rails, MySQL, etc. setup, here's a rough idea
+of how to install it on Ubuntu:
+
+cd Blooger
+sudo /var/lib/gems/1.8/bin/rake gems:install
+sudo /var/lib/gems/1.8/bin/rake gems:install RAILS_ENV=test
+sudo /var/lib/gems/1.8/bin/rake gems:install RAILS_ENV=cucumber
+echo "GRANT ALL ON *.* TO 'blooger'@'localhost' IDENTIFIED BY 'bl00gbuTT';" |
+mysql -u root -p
+rake db:create
+rake db:migrate
+rake db:create RAILS_ENV=test
+rake db:migrate RAILS_ENV=test
+
+Naturally, you can change the database password by editing the above command and
+then editing config/database.yml.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
