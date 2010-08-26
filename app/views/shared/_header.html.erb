@@ -3,6 +3,7 @@
     Welcome, <%= current_user.username %><br/>
     <%= link_to "Account", current_user %> |
     <%= link_to "Edit Posts", admin_user_posts_path(current_user) %> |
+    <%= link_to "View Bloog", bloog_path(current_user) %> |
     <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
   <% else %>
     <%= link_to "Register", new_user_path %> |
