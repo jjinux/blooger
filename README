@@ -2,6 +2,8 @@
 
 This is a simple blogger-like site that I'm building for an interview.
 
+I have a copy of the site running on: http://blooger.heroku.com/
+
 Here are the basic features of the site:
 
 * You can create an account (aka a "bloog").
@@ -9,7 +11,7 @@ Here are the basic features of the site:
 * You can use Markdown when writing your post.
 * You can see all the bloogs that different people have created on the homepage.
 * You can see all the posts for a particular bloog.
-* There is an Atom feed for the bloog.
+* There is an Atom feed for the bloog.  It works well enough for Google Reader :)
 * You can edit your account settings.
 * There are some fun surprises in the user interface.
 
