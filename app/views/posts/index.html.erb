@@ -1,0 +1,21 @@
+<h2>Listing Posts</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th width="40%">Actions</th>
+    </tr>
+  </thead>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= @post.title %></td>
+      <td><%= link_to "Show", user_post_path(:user_id => current_user, :id => post) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to 'New Post', new_user_post_path(:user_id => current_user) %>
+</p>
