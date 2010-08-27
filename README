@@ -45,6 +45,13 @@ rake db:migrate RAILS_ENV=test
 Naturally, you can change the database password by editing the above command and
 then editing config/database.yml.
 
+== Future TODOs
+
+Test it thoroughly.
+Test for XSS vulnerabilities.
+Measure coverage.
+Move the atom action into the show action and vary by request type.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
