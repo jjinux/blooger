@@ -47,10 +47,10 @@ then editing config/database.yml.
 
 == Future TODOs
 
-Test it thoroughly.
-Test for XSS vulnerabilities.
-Measure coverage.
-Move the atom action into the show action and vary by request type.
+* Test it thoroughly.
+* Test for XSS vulnerabilities.
+* Measure coverage.
+* Move the atom action into the show action and vary by request type.
 
 == Welcome to Rails
 
