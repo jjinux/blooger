@@ -51,6 +51,7 @@ then editing config/database.yml.
 * Test for XSS vulnerabilities.
 * Measure coverage.
 * Move the atom action into the show action and vary by request type.
+* Write a test for the Atom feed.
 
 == Welcome to Rails
 
