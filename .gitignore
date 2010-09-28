@@ -1,6 +1,9 @@
 # Created by NetBeans.
 /nbproject
 
+# Created by RubyMine.
+/.idea
+
 # Created by Vim.
 .*.swp
 
