@@ -20,8 +20,9 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic"
-  config.gem "matthuhiggins-foreigner", :lib => "foreigner"
+  config.gem "foreigner"
   config.gem "BlueCloth", :lib => "bluecloth"
+  config.gem "erubis", :version => ">=2.6.5"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

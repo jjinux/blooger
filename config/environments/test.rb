@@ -27,7 +27,7 @@ config.action_mailer.delivery_method = :test
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
 
-config.gem 'rspec-rails', :version => '>= 1.3.2', :lib => false unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec-rails'))
-
 # There is some duplication between test.rb and cucumber.rb.
 config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :version => ">=1.2.2", :source => "http://gems.github.com"
+config.gem 'rspec',                   :lib => false, :version => '1.3.0' unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec'))
+config.gem 'rspec-rails',             :lib => false, :version => '1.3.2' unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec-rails'))
